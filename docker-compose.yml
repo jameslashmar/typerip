@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  typerip:
+    build: .
+    container_name: typerip
+    restart: unless-stopped
+    ports:
+      - "8088:80"
